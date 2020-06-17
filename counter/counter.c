@@ -5,6 +5,7 @@
 
 static volatile int keep_running = 1;
 
+/* Handler to graciously stop with Ctrl+C */
 void int_handler(int tmp)
 {
     keep_running = 0;
